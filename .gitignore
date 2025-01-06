@@ -1,0 +1,22 @@
+# Ignore binary files
+*.o
+*.out
+*.exe
+
+# Ignore data files
+clients_data.dat
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore compiled files
+*.a
+*.so
+*.dll
+
+# Ignore backup files
+*.bak
+*.tmp
+
+# Ignore core dumps
+core
