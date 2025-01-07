@@ -600,7 +600,7 @@ int main()
             SaveData();
             free(clients_info);
             printf("Thank you for using Magadha Bank! Goodbye!\n");
-            return EXIT_SUCCESS;
+            return 0;
         default:
             printf("Invalid choice! Please enter a number between 1 and 11.\n");
         }
