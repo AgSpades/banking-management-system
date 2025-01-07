@@ -36,4 +36,4 @@ This project is a simple bank management system implemented in C. It allows you 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).MIT License.
+This project is licensed under the [MIT License](LICENSE).
