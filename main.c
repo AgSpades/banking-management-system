@@ -48,7 +48,7 @@ void ClearInputBuffer();
 bool ValidatePhoneNumber(const char *phone);
 bool ValidateName(const char *name);
 bool ValidateGender(const char *gender);
-void PrintReceipt(const char *transaction_type, long long int account_number, int amount, int new_balance);
+void PrintReceipt(const char *transaction_type, long long int account_number, long long amount, int new_balance);
 
 // Utility functions
 long long int GenerateAccountNumber();
@@ -92,7 +92,7 @@ bool ValidateGender(const char *gender)
             strcasecmp(gender, "Other") == 0);
 }
 
-void PrintReceipt(const char *transaction_type, long long int account_number, int amount, int new_balance)
+void PrintReceipt(const char *transaction_type, long long int account_number, long long amount, int new_balance)
 {
     printf("\n----- Transaction Receipt -----\n");
     printf("Transaction Type: %s\n", transaction_type);
@@ -203,7 +203,7 @@ void TransferFunds()
 {
     ClearScreen();
     long long int from_account, to_account;
-    int amount;
+    long long amount;
 
     printf("Enter the account number to transfer from: ");
     if (scanf("%lld", &from_account) != 1)
@@ -408,7 +408,7 @@ void DepositMoney()
 {
     ClearScreen();
     long long int account_number;
-    int amount;
+    long long amount;
 
     printf("Enter the account number to deposit into: ");
     if (scanf("%lld", &account_number) != 1)
@@ -446,7 +446,7 @@ void WithdrawMoney()
 {
     ClearScreen();
     long long int account_number;
-    int amount;
+    long long amount;
 
     printf("Enter the account number to withdraw from: ");
     if (scanf("%lld", &account_number) != 1)
