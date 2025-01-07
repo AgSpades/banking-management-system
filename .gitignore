@@ -21,3 +21,6 @@ clients_data.dat
 # Ignore core dumps
 core
 main
+.venv
+.vscode
+demo.cast
